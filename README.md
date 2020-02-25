@@ -118,14 +118,14 @@ java -jar Simulator.jar
 if location is currently somewhere on Main Street the following prints **"Main Street"**.
 ```Java
 Simulator simulator = new Simulator();
-current_location = simulator.get_location()
+String current_location = simulator.get_location()
 System.out.println(current_location); 
 ```
 If location just ahead in the direction given is off the map or a location that would result in a crash, such as a building, 
 the following prints **"Invalid Location"**.
 ```Java
 Simulator simulator = new Simulator();
-looking_west = simulator.look_ahead("WEST")
+String looking_west = simulator.look_ahead("WEST")
 System.out.println(looking_west); 
 ```
 
