@@ -71,15 +71,20 @@ Github.
 [Basics of ```git``` (Command Line)](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 ### Using the Simulator
-In the folder [prgmng-challenge/Town-Simulator/src](src/) you will find a Java Archive (.jar) file named ```Simulator.jar``` and a template
-for the Vehicle class named ```Vehicle.java```. To build and test your code, You will complete the definition of the Vehicle class, 
-compile, then add the resulting .class file to Simulator.jar by using the ```jar``` tool in the terminal or Command Prompt. This 
-is done as follows:
+In the folder [prgmng-challenge/Town-Simulator/src](src/) you will find a Java Archive (.jar) file named ```Simulator.jar``` and a
+template
+for the Vehicle class named ```Vehicle.java```. **NOTE: running the .jar file will not work initially since the simulator attempts
+to create a Vehicle object and the Vehicle class has not yet been created, compiled, or added to Simulator.jar.** To build and test your
+code, You will complete the definition of the Vehicle class, compile, then add the resulting .class file to Simulator.jar by using the
+```jar``` tool in the terminal or Command Prompt. This is done as follows:
+
+#### Compile your Vehicle.java file
+```javac Vehicle.java```
 
 #### Add class file to JAR
 ```jar uf Simulator.jar Vehicle.class```
 
-#### Remove class file from JAR (Windows)
+#### Remove class file from JAR (to make changes to the Vehicle class)
 ```
 jar xf Simulator.jar <-- Extract JAR, use an empty directory
 del Vehicle.class <-- Change del to rm for UNIX/Linux
