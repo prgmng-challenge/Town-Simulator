@@ -3,8 +3,9 @@ Programming challenge. Given the API documentation for a simulation of a town, d
 Vehicle, that will navigate the town, seeking a target location randomly selected by the simulator at run time.
 
 ## Official Challenge Description
-Given an executable Java Archive, Simulator.jar, which simulates a town, define and add the Vehicle class having a constructor with
-the following signature: 
+Given an executable Java Archive (just a collection of .class files packaged together with a file named MANIFEST.MF to point to
+```main()```), Simulator.jar, which
+simulates a town, define and add the Vehicle class having a constructor with the following signature: 
 ```Java
 public Vehicle(Simulator s)
 ```
